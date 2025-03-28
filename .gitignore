@@ -1,0 +1,93 @@
+# Arquivos e diretórios do Python/Django
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+*.whl
+
+# Ambiente virtual (se você estiver usando um)
+venv/
+env/
+.env/
+.venv/
+env.bak/
+venv.bak/
+
+# Arquivos de ambiente (contêm informações sensíveis, como chaves de API)
+.env
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Arquivos de migrations do Django (opcional, dependendo do fluxo de trabalho)
+# Se você versiona migrations, remova esta linha
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# Banco de dados local (se você usa SQLite, por exemplo)
+*.sqlite3
+*.db
+
+# Arquivos de logs
+*.log
+logs/
+*.log.*
+
+# Arquivos temporários e de cache
+*.cache
+*.tmp
+*.temp
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Arquivos do editor/IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos do Docker
+# Ignorar arquivos gerados pelo Docker e Docker Compose
+
+# Ignorar volumes e dados persistentes do Docker
+docker-volumes/
+# Ignorar imagens e containers (geralmente não versionados)
+*.tar
+*.tar.gz
+
+# Arquivos de build e dependências geradas
+node_modules/  # Caso você use algum front-end com npm/yarn
+staticfiles/   # Arquivos estáticos coletados pelo Django (collectstatic)
+media/         # Arquivos de mídia enviados pelos usuários (se aplicável)
+
+# Arquivos de testes e cobertura
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+*.pytest_cache/
+.pytest_cache/
+.tox/
+
+# Arquivos de documentação gerada
+docs/_build/
+
+# Outros arquivos desnecessários
+*.bak
+*.backup
+*~
+
+# Arquivos específicos do sistema operacional
+.DS_Store  # macOS
+Thumbs.db  # Windows
