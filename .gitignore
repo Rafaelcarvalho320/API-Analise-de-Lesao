@@ -10,6 +10,8 @@ dist/
 build/
 *.egg
 *.whl
+*.joblib
+*.h5
 
 # Ambiente virtual (se você estiver usando um)
 venv/
