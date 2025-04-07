@@ -14,9 +14,11 @@ COPY requirements.txt .
 # Instalar as dependências
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Baixar o modelo do Google Drive
+RUN gdown --id 1HmXuhVMgFXHXgXKDH0WccHao7j74LYAA -O /app/resnet18_improved78.h5
+
 # Copiar os arquivos de modelo para o container
 COPY best_xgb_model_81.joblib /app/best_xgb_model_81.joblib
-COPY resnet18_improved78.h5 /app/resnet18_improved78.h5
 
 # Copiar o restante do projeto para o container
 COPY . .

@@ -55,3 +55,5 @@ wrapt==1.17.2
 xgboost==3.0.0
 drf-spectacular==0.26.5
 django-cors-headers==4.4.0
+gdown==5.1.0
+
